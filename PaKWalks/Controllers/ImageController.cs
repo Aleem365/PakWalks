@@ -17,47 +17,47 @@ namespace PaKWalks.Controllers
             this.imageRepository = imageRepository;
         }
 
-        // Post : api/Image/Upload
-        [HttpPost]
-        [Route("Upload")]
-        public async Task<IActionResult> Upload([FromForm] ImageUploadRequestDto request)
-        {
-            ValidateFileUpload(request);
+        //// Post : api/Image/Upload
+        //[HttpPost]
+        //[Route("Upload")]
+        //public async Task<IActionResult> Upload([FromForm] ImageUploadRequestDto request)
+        //{
+        //    ValidateFileUpload(request);
 
-            if (ModelState.IsValid)
-            {
-                //Convert DTO to Domain Model
-                var imageDomainModel = new Image
-                {
-                    File = request.File,
-                    FileExtension = Path.GetExtension(request.File.FileName),
-                    FileSizeInBytes = request.File.Length,
-                    FileDescription = request.FileDescription,
-                    FileName = request.FileName,
-                };
+        //    if (ModelState.IsValid)
+        //    {
+        //        //Convert DTO to Domain Model
+        //        var imageDomainModel = new Image
+        //        {
+        //            File = request.File,
+        //            FileExtension = Path.GetExtension(request.File.FileName),
+        //            FileSizeInBytes = request.File.Length,
+        //            FileDescription = request.FileDescription,
+        //            FileName = request.FileName,
+        //        };
 
-                // user Repository to upload Image
+        //        // user Repository to upload Image
 
-                await imageRepository.Upload(imageDomainModel);
+        //        await imageRepository.Upload(imageDomainModel);
 
-                return Ok(imageDomainModel);
-            }
-            return BadRequest(ModelState);
-        }
+        //        return Ok(imageDomainModel);
+        //    }
+        //    return BadRequest(ModelState);
+        //}
 
-        private void ValidateFileUpload(ImageUploadRequestDto request)
-        {
-            var allowedExtenstions = new string[] { ".jpg", ".jped", ".png", ".mp4" };
+        //private void ValidateFileUpload(ImageUploadRequestDto request)
+        //{
+        //    var allowedExtenstions = new string[] { ".jpg", ".jped", ".png", ".mp4" };
 
-            if (!allowedExtenstions.Contains(Path.GetExtension(request.File.FileName)))
-            {
-                ModelState.AddModelError("file", "Unsupported file extension");
-            }
+        //    if (!allowedExtenstions.Contains(Path.GetExtension(request.File.FileName)))
+        //    {
+        //        ModelState.AddModelError("file", "Unsupported file extension");
+        //    }
 
-            if (request.File.Length > 10485760)
-            {
-                ModelState.AddModelError("file", "File size more than 10MB, Please upload a smaller size file");
-            }
-        }
+        //    if (request.File.Length > 10485760)
+        //    {
+        //        ModelState.AddModelError("file", "File size more than 10MB, Please upload a smaller size file");
+        //    }
+        //}
     }
 }
