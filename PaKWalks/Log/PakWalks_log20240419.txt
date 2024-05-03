@@ -1,0 +1,186 @@
+2024-04-19 02:57:16.223 +05:00 [INF] User profile is available. Using 'C:\Users\Dell- Dev\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-19 02:57:16.442 +05:00 [INF] Now listening on: https://localhost:7008
+2024-04-19 02:57:16.443 +05:00 [INF] Now listening on: http://localhost:5124
+2024-04-19 02:57:16.446 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-19 02:57:16.447 +05:00 [INF] Hosting environment: Development
+2024-04-19 02:57:16.447 +05:00 [INF] Content root path: E:\dotnet core 6 pratice\Domain\Domain OverView
+2024-04-19 02:57:18.063 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - -
+2024-04-19 02:57:18.354 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - - - 200 - text/html;charset=utf-8 293.4345ms
+2024-04-19 02:57:18.820 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - -
+2024-04-19 02:57:18.826 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 5.6888ms
+2024-04-19 02:57:18.992 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - -
+2024-04-19 02:57:19.048 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.5663ms
+2024-04-19 02:57:19.478 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - -
+2024-04-19 02:57:19.572 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.4076ms
+2024-04-19 02:57:32.775 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 02:57:32.986 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:57:33.171 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 02:57:35.613 +05:00 [INF] Executed DbCommand (91ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 02:57:35.703 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 02:57:35.727 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 2547.9229ms
+2024-04-19 02:57:35.728 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:57:35.733 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 2958.6577ms
+2024-04-19 02:57:58.398 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 02:57:58.411 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:57:58.412 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 02:57:58.432 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 02:57:58.435 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 02:57:58.437 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 22.7395ms
+2024-04-19 02:57:58.437 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:57:58.438 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 40.1721ms
+2024-04-19 02:58:03.934 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 02:58:03.937 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:58:03.938 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 02:58:04.000 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 02:58:04.004 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 02:58:04.004 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 65.153ms
+2024-04-19 02:58:04.005 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:58:04.006 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 72.6966ms
+2024-04-19 02:58:11.422 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 02:58:11.423 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:58:11.424 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 02:58:11.427 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 02:58:11.429 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 02:58:11.429 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 4.074ms
+2024-04-19 02:58:11.430 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:58:11.431 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 9.8439ms
+2024-04-19 02:58:12.192 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 02:58:12.193 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:58:12.193 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 02:58:12.196 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 02:58:12.199 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 02:58:12.201 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 6.5732ms
+2024-04-19 02:58:12.202 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:58:12.204 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 11.7941ms
+2024-04-19 02:58:13.341 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 02:58:13.341 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:58:13.342 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 02:58:13.345 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 02:58:13.349 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 02:58:13.350 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 5.9794ms
+2024-04-19 02:58:13.351 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 02:58:13.351 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 10.7432ms
+2024-04-19 03:02:52.970 +05:00 [INF] User profile is available. Using 'C:\Users\Dell- Dev\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-19 03:02:53.147 +05:00 [INF] Now listening on: https://localhost:7008
+2024-04-19 03:02:53.148 +05:00 [INF] Now listening on: http://localhost:5124
+2024-04-19 03:02:53.149 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-19 03:02:53.150 +05:00 [INF] Hosting environment: Development
+2024-04-19 03:02:53.150 +05:00 [INF] Content root path: E:\dotnet core 6 pratice\Domain\Domain OverView
+2024-04-19 03:02:53.956 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - -
+2024-04-19 03:02:54.163 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - - - 200 - text/html;charset=utf-8 208.5887ms
+2024-04-19 03:02:54.186 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - -
+2024-04-19 03:02:54.186 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - -
+2024-04-19 03:02:54.196 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 9.6476ms
+2024-04-19 03:02:54.219 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.7062ms
+2024-04-19 03:02:54.257 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - -
+2024-04-19 03:02:54.359 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 102.1150ms
+2024-04-19 03:02:57.358 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 03:02:57.413 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:02:57.424 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 03:02:58.353 +05:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 03:02:58.411 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 03:02:58.421 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 992.4523ms
+2024-04-19 03:02:58.423 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:02:58.429 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 1071.0606ms
+2024-04-19 03:03:06.225 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 03:03:06.228 +05:00 [INF] CORS policy execution successful.
+2024-04-19 03:03:06.230 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:03:06.231 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 03:03:06.244 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 03:03:06.246 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 03:03:06.248 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 15.3194ms
+2024-04-19 03:03:06.249 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:03:06.249 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 24.4140ms
+2024-04-19 03:04:26.225 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 03:04:26.227 +05:00 [INF] CORS policy execution successful.
+2024-04-19 03:04:26.231 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:04:26.232 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 03:04:26.294 +05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 03:04:26.295 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 03:04:26.297 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 63.1498ms
+2024-04-19 03:04:26.298 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:04:26.299 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 73.2986ms
+2024-04-19 03:04:52.920 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 03:04:52.926 +05:00 [INF] CORS policy execution successful.
+2024-04-19 03:04:52.927 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:04:52.928 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 03:04:52.930 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 03:04:52.932 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 03:04:52.932 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 4.0182ms
+2024-04-19 03:04:52.933 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:04:52.934 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 13.5426ms
+2024-04-19 03:05:40.182 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 03:05:40.187 +05:00 [INF] CORS policy execution successful.
+2024-04-19 03:05:40.187 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:05:40.188 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 03:05:40.206 +05:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 03:05:40.207 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 03:05:40.208 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 19.327ms
+2024-04-19 03:05:40.209 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:05:40.210 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 27.3744ms
+2024-04-19 03:06:04.468 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 03:06:04.468 +05:00 [INF] CORS policy execution successful.
+2024-04-19 03:06:04.470 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:06:04.471 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 03:06:04.474 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 03:06:04.476 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 03:06:04.477 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 4.7761ms
+2024-04-19 03:06:04.478 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:06:04.478 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 10.5541ms
+2024-04-19 03:06:15.992 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 03:06:15.993 +05:00 [INF] CORS policy execution successful.
+2024-04-19 03:06:15.993 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:06:15.994 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 03:06:16.010 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 03:06:16.012 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 03:06:16.012 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 17.6697ms
+2024-04-19 03:06:16.013 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:06:16.014 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 22.1564ms
+2024-04-19 03:06:28.105 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 03:06:28.106 +05:00 [INF] CORS policy execution successful.
+2024-04-19 03:06:28.107 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:06:28.107 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 03:06:28.109 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 03:06:28.111 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 03:06:28.112 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 3.8972ms
+2024-04-19 03:06:28.113 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:06:28.114 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 8.6607ms
+2024-04-19 03:06:34.200 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7008/api/Region - -
+2024-04-19 03:06:34.201 +05:00 [INF] CORS policy execution successful.
+2024-04-19 03:06:34.201 +05:00 [INF] Executing endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:06:34.202 +05:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Domain_OverView.Controllers.RegionController (Domain_OverView).
+2024-04-19 03:06:34.206 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-19 03:06:34.211 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Domain_OverView.Models.DTO.RegionDto, Domain_OverView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-19 03:06:34.212 +05:00 [INF] Executed action Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView) in 9.3172ms
+2024-04-19 03:06:34.214 +05:00 [INF] Executed endpoint 'Domain_OverView.Controllers.RegionController.GetAll (Domain_OverView)'
+2024-04-19 03:06:34.214 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/Region - - - 200 - application/json;+charset=utf-8 14.7524ms
